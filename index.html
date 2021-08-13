@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-
+            let array = []
             let soma = 0
             function snapCrackle(maxValue){
                 for(i=0; i<=maxValue; i= 1+i){
@@ -16,20 +16,21 @@
                     soma++
                    
                     if(soma%2 !=0 && soma%5 ==0 || soma%10==0){
-                        console.log('SnapClackle')
+                        array.push('SnapClackle')
                     }
                    
                     else if (soma%2 != 0){
-                        console.log('Snap')
+                        array.push('Snap')
                     }
-                    else{console.log(soma)
+                    else{array.push(soma)
                     }
                     
                     
                 }
 
+                console.log(array)
             }
-           console.log(snapCrackle(12))
+           console.log(snapCrackle(800))
     </script>
 </body>
 </html>
