@@ -9,26 +9,26 @@
 <body>
     <script>
             let array = []
-            let soma = 0
+            
             function snapCrackle(maxValue){
                 for(i=0; i<=maxValue; i= 1+i){
        
-                    soma++
+                    
                    
-                    if(soma%2 !=0 && soma%5 ==0 || soma%10==0){
+                    if(i%2 !=0 && i%5 ==0 || i%10==0){
                         array.push('SnapClackle')
                     }
                    
-                    else if (soma%2 != 0){
+                    else if (i%2 != 0){
                         array.push('Snap')
                     }
-                    else{array.push(soma)
+                    else{array.push(i)
                     }
                     
                     
                 }
 
-                document.write(array)
+                return (array)
             }
            console.log(snapCrackle(15))
     </script>
